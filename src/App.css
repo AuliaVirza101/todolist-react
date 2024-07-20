@@ -58,3 +58,23 @@ h1 {
   padding: 0.55rem;
   cursor: pointer;
 }
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e2d2f;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}

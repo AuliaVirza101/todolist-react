@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { TdForm } from './TdForm'
-import {v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4 } from 'uuid'
+import { Todo } from './Todo'
 
 uuidv4();
 
@@ -16,7 +17,7 @@ uuidv4();
     return(
         <div className='TodoWrapper'>
             <TdForm addTodo={addTodo}/>
-            
+            <Todo/>
         </div>
     )
  }
