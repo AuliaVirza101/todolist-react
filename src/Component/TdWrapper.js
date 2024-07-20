@@ -14,10 +14,23 @@ uuidv4();
         setTodos([...todos,
              {id : uuidv4(), task :todo ,completed:false,isEditing:false}])
     }
+    const toggleComplete = (id) => {
+        setTodos(
+          todos.map((todo) =>
+            todo.id === id ? { ...todo, completed: !todo.completed } : todo
+          )
+        );
+    }
     return(
         <div className='TodoWrapper'>
+            <h1>To do List</h1>
+            <h4>Click it to mark it as done</h4>
             <TdForm addTodo={addTodo}/>
-            <Todo/>
+            {todos.map((todo, index) => (
+                <Todo task={todo} key={index}
+                toggleComplete ={toggleComplete} />  
+            ))}
+            
         </div>
     )
  }

@@ -24,6 +24,12 @@ h1 {
   font-size: 1.75rem;
 }
 
+h4 {
+  color: #fff;
+  margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+}
+
 .TodoWrapper {
   background: #161617;
   margin-top: 5rem;
@@ -76,5 +82,16 @@ h1 {
 
 .edit-icon,
 .delete-icon {
+  cursor: pointer;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #3d3b3b;
+  text-decoration: line-through;
   cursor: pointer;
 }
