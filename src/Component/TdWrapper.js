@@ -21,6 +21,7 @@ uuidv4();
           )
         );
     }
+    const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));
     return(
         <div className='TodoWrapper'>
             <h1>To do List</h1>
@@ -28,7 +29,9 @@ uuidv4();
             <TdForm addTodo={addTodo}/>
             {todos.map((todo, index) => (
                 <Todo task={todo} key={index}
-                toggleComplete ={toggleComplete} />  
+                toggleComplete ={toggleComplete}
+                deleteTodo ={deleteTodo}
+                />  
             ))}
             
         </div>
