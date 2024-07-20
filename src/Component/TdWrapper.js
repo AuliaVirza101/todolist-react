@@ -14,6 +14,7 @@ uuidv4();
         setTodos([...todos,
              {id : uuidv4(), task :todo ,completed:false,isEditing:false}])
     }
+    // Function to toggle the completion status of a todo item
     const toggleComplete = (id) => {
         setTodos(
           todos.map((todo) =>
@@ -21,6 +22,7 @@ uuidv4();
           )
         );
     }
+    // Function to delete a todo item by its ID
     const deleteTodo = (id) => setTodos(todos.filter((todo) => todo.id !== id));
     return(
         <div className='TodoWrapper'>
