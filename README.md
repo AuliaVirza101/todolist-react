@@ -15,7 +15,7 @@ npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 
 #component
-npm i -
+npm i --save @fortawesome/react-fontawesome@latest
 
 
 
